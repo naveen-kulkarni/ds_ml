@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+
+kind: Deployment
+
+metadata:
+  name: vehicle-api
+
+spec:
+
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: vehicle-api
+
+  template:
+
+    metadata:
+      labels:
+        app: vehicle-api
+
+    spec:
+
+      containers:
+
+      - name: vehicle-api
+
+        image: vehicle-api:latest
+
+        ports:
+
+        - containerPort: 5000 
