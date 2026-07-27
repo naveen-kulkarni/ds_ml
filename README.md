@@ -68,3 +68,4 @@ You should see an experiment named VehiclePricePrediction with the logged model.
 
 kubectl apply -f deployment.yaml
 
+Docker image: naveenvilas/vehicle-api:latest
